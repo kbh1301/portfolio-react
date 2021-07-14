@@ -1,0 +1,39 @@
+html {
+    --dot-size: 80px;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.cusWrapper {
+    margin: -6px auto;
+    overflow: hidden;
+    border-radius:50%;
+    position: relative;
+    z-index: 1;
+}
+
+.cusWrapperImg {
+    position: absolute;
+    top:70%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+}
+
+.dot {
+    height: var(--dot-size);
+    width: var(--dot-size);
+    border-radius: 50%;
+    z-index: 0;
+    left: 0px;
+}
+
+.cus-bar {
+    height: 3em;
+}
+
+.cus-bar--hidden {
+    top: calc(0px - var(--dot-size));
+}
