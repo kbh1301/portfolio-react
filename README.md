@@ -1,8 +1,7 @@
 To-Do:
-- NavBar slide-in
-- Fade-in content
-- Add resume, demos, hobbies content
-- Resume card data and lists
+- NavBar slide-up
+- Add demos, hobbies content
+- Redesign css
 - Refactor code, reduce dependencies
 
 # Getting Started with Create React App

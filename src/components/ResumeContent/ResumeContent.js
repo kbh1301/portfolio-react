@@ -9,9 +9,8 @@ import './ResumeContent.css'
 const ResumeContent = () => {
 
     const resumeCards = () =>
-        resume.map((section, i) => { return (
-            
-            <article class="pa2 flex flex-column bg-white br4 mv3 mh2 ba bw1 b--black shadow-5 items-center tl">
+        resume.map((section, i) => { return ( 
+            <article id={resume[i].id} class="pa2 flex flex-column bg-white br4 mv3 mh2 ba bw1 b--black shadow-5 items-center tl">
                 <div className="">
                     <div class="flex justify-center">
                         <img src={cardImg(i)} class="bh3 w3 h3 dib self-center" alt=""/>
@@ -19,10 +18,8 @@ const ResumeContent = () => {
                     </div>
                     <hr class="mw4 bb bw1 b--black-10"/>
                     {resumePositions(resume[i].data)}
-                    {console.log(resume[i].data)}
                 </div>
             </article>
-        
         )})
 
     // returns card's image based on data.id property
@@ -57,7 +54,7 @@ const ResumeContent = () => {
     )})
 
     return(
-        <div className="flex flex-column items-center">
+        <div className="flex flex-column items-center fadeInContent">
             {resumeCards()}
         </div>
     );

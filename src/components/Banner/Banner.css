@@ -5,3 +5,12 @@ body {
 .cusMar {
     margin-bottom: auto;
 }
+
+.cusImg {
+    width: 12rem;
+}
+
+.cusCusImg {
+    width: 12rem;
+    height: 12rem;
+}
