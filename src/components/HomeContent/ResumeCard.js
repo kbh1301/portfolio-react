@@ -5,7 +5,7 @@ import coding from '../../img/coding.png';
 import './ResumeCard.css'
 
 // render single resume card for home tab
-const ResumeCard = ({ id, title, data, bannerBarScroll }) => {
+const ResumeCard = ({ id, title, data, resumeScroll }) => {
     
     // returns card's image based on data.id property
     const cardImg = () => {
@@ -51,7 +51,7 @@ const ResumeCard = ({ id, title, data, bannerBarScroll }) => {
                 {resumePositions()}
                 <fade/>
             </div>
-            <p class="f4 no-underline grow shadow-hover dib v-mid bg-gray white ph3 pv2 br-pill" onClick={() => bannerBarScroll('resume')}>See More</p>
+            <p class="f4 no-underline grow shadow-hover dib v-mid bg-gray white ph3 pv2 br-pill" onClick={() => resumeScroll(id)}>See More</p>
         </article>
         </Fragment>
     );

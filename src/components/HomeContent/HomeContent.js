@@ -2,7 +2,7 @@ import React from 'react';
 import ResumeCard from './ResumeCard';
 import { resume } from '../ResumeContent/ResumeInfo'
 
-const HomeContent = ({ bannerBarScroll }) => {
+const HomeContent = ({ resumeScroll }) => {
 
     // creates resume card for each object in ResumeInfo.js
     // passes values to ResumeCard.js
@@ -12,12 +12,12 @@ const HomeContent = ({ bannerBarScroll }) => {
                 id={resume[i]?.id}
                 title={resume[i]?.title}
                 data={resume[i]?.data}
-                bannerBarScroll={bannerBarScroll}
+                resumeScroll={resumeScroll}
             />
         )})
 
     return(
-        <div className="flex flex-column items-center">
+        <div className="flex flex-column items-center fadeInContent">
             <article class="mw8 br3 hidden ba b--black-10 mv4 mh2 shadow-3">
                 <h1 class="f4 bg-near-white br3 br--top black-60 mv0 pv2 ph3">About Me</h1>
                 <div class="pa3 bt b--black-10">
