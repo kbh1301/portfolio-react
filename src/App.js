@@ -17,7 +17,7 @@ function App() {
   const timeout = (ms) => new Promise( res=> setTimeout(res, ms))
 
   const useOnScreen = (bannerBar) => {
-    const [isIntersecting, setIntersecting] = useState(false) 
+    const [isIntersecting, setIntersecting] = useState(true) 
     const observer = new IntersectionObserver(
       ([entry]) => setIntersecting(entry.isIntersecting)
     )
@@ -26,7 +26,7 @@ function App() {
       // Remove the observer as soon as the component is unmounted
       return () => { observer.disconnect() }
     }, [])
-    return isIntersecting
+    return !isIntersecting
   }
   const isNavVisible = useOnScreen(bannerBar)
 
@@ -67,7 +67,7 @@ function App() {
 
   return (
     <div className="App">
-      {!isNavVisible && <Navigation bannerBarScroll={bannerBarScroll} showContact={showContact} />}
+      {isNavVisible && <Navigation bannerBarScroll={bannerBarScroll} showContact={showContact} />}
       <Banner bannerBar={bannerBar} bannerBarScroll={bannerBarScroll} showContact={showContact} />
       {isContactVisible && <ContactForm hideContact={hideContact} />}
       {routeSwitch()}   
