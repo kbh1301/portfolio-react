@@ -2,7 +2,7 @@ import React from 'react';
 import ResumeCard from './ResumeCard';
 import { resume } from '../ResumeContent/ResumeInfo'
 
-const HomeContent = ({ resumeScroll }) => {
+const AboutContent = ({ resumeScroll }) => {
 
     // creates resume card for each object in ResumeInfo.js
     // passes values to ResumeCard.js
@@ -37,4 +37,4 @@ const HomeContent = ({ resumeScroll }) => {
     );
 }
 
-export default HomeContent;
+export default AboutContent;

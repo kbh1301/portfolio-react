@@ -26,6 +26,31 @@ export const resume = [
             },
             {
                 id: 1,
+                position: 'IT Department Intern',
+                place: 'EnableComp',
+                date: 'Jan 2019 - May 2019',
+                overview: 'Worked with team members of various information technology specializations such as networking, cybersecurity, computer programming, and help desk.',
+                descs: [
+                    {
+                        id: 0,
+                        desc: 'Assisted in setting up hardware',
+                    },
+                    {
+                        id: 1,
+                        desc: 'Provided technical support via ticketing system',
+                    },
+                    {
+                        id: 2,
+                        desc: 'Shadowed and assisted in software development',
+                    },
+                    {
+                        id: 3,
+                        desc: 'Received training in debugging, troubleshooting, and testing'
+                    }
+                ]
+            },
+            {
+                id: 2,
                 position: 'Rural Carrier Associate',
                 place: 'United States Postal Service',
                 date: 'July 2018 - Dec 2018',
@@ -46,7 +71,7 @@ export const resume = [
                 ]
             },
             {
-                id: 2,
+                id: 3,
                 position: 'Store Associate',
                 place: 'K&S Awards',
                 date: 'February 2018 - July 2018',

@@ -1,10 +1,12 @@
 import React from 'react';
+import NavButtons from '../NavButtons/NavButtons';
 import avi from '../../img/KBH_avi.jpg';
 import banner from '../../img/banner.jpg';
 import './Banner.css'
 
-const Banner = ({ bannerBar, bannerBarScroll, showContact }) => {
+const Banner = ({ bannerBar, bannerBarScroll, showContact, route }) => {
 
+    // dynamically set banner size to fit viewport
     window.requestAnimationFrame(() => {
         const linksBarSize = document.getElementById("bannerBar")?.scrollHeight;
         const bannerMain = document.getElementById("bannerMain");
@@ -27,12 +29,8 @@ const Banner = ({ bannerBar, bannerBarScroll, showContact }) => {
                         <h2 class="fw1 f3 white-80 mt3 mb5 sans-serif">And I'm a Software Developer</h2>
                     </div>
                 </div>
-                <div id="bannerBar" ref={bannerBar} className="bg-light-blue bb bt b--white cusMar">
-                    <p class="f4 no-underline grow shadow-hover dib v-mid bg-light-blue black ph4 pv2 mb3 mt3 ml2 mr2 br-pill" onClick={() => bannerBarScroll('home')}>Home</p>
-                    <p class="f4 no-underline grow shadow-hover dib v-mid bg-light-blue white ph4 pv2 mb3 mt3 ml2 mr2 br-pill" onClick={() => bannerBarScroll('resume')}>Resume</p>
-                    <p class="f4 no-underline grow shadow-hover dib v-mid bg-light-blue white ph4 pv2 mb3 mt3 ml2 mr2 br-pill" onClick={() => bannerBarScroll('demos')}>Demos</p>
-                    <p class="f4 no-underline grow shadow-hover dib v-mid bg-light-blue white ph4 pv2 mb3 mt3 ml2 mr2 br-pill" onClick={() => bannerBarScroll('hobbies')}>Hobbies</p>
-                    <p class="f4 no-underline grow shadow-hover dib v-mid bg-blue white ph4 pv2 mb3 mt3 ml2 mr2 br-pill i" onClick={() => showContact()}>Contact Me</p>
+                <div id="bannerBar" ref={bannerBar} className="flex justify-center flex-wrap bg-light-blue bb bt b--white cusMar">
+                    <NavButtons bannerBarScroll={bannerBarScroll} showContact={showContact} route={route} source='Banner' />
                 </div>
             </div>
         </header>        
