@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import Banner from './components/Banner/Banner';
 import Navigation from './components/Navigation/Navigation';
 import ContactForm from './components/ContactForm/ContactForm';
-import HomeContent from './components/HomeContent/HomeContent';
+import AboutContent from './components/AboutContent/AboutContent';
 import ResumeContent from './components/ResumeContent/ResumeContent';
 import DemosContent from './components/DemosContent/DemosContent';
 import HobbiesContent from './components/HobbiesContent/HobbiesContent';
@@ -11,8 +11,8 @@ import './App.css';
 
 function App() {
   const bannerBar = useRef()
-  const [route, setRoute] = useState('home')
-  const [isContactVisible, setIsContactVisible] = useState(false) 
+  const [route, setRoute] = useState('about')
+  const [isContactVisible, setIsContactVisible] = useState(false)
 
   const timeout = (ms) => new Promise( res=> setTimeout(res, ms))
 
@@ -30,10 +30,12 @@ function App() {
   }
   const isNavVisible = useOnScreen(bannerBar)
 
-  const bannerBarScroll = async (route) => {
-    bannerBar.current.scrollIntoView({behavior: 'smooth'});
-    await timeout(100);
-    setRoute(route);
+  const bannerBarScroll = async (el) => {
+    if(el.target.title){
+      bannerBar.current.scrollIntoView({behavior: 'smooth'});
+      await timeout(100);
+      setRoute(el.target.title);
+    }
   }
 
   const resumeScroll = async (id) => {
@@ -47,8 +49,8 @@ function App() {
 
   const routeSwitch = () => {
     switch(route) {
-      case 'home':
-        return <HomeContent resumeScroll={resumeScroll} />;
+      case 'about':
+        return <AboutContent resumeScroll={resumeScroll} />;
       case 'resume':
         return <ResumeContent />;
       case 'demos':
@@ -67,8 +69,8 @@ function App() {
 
   return (
     <div className="App">
-      {isNavVisible && <Navigation bannerBarScroll={bannerBarScroll} showContact={showContact} />}
-      <Banner bannerBar={bannerBar} bannerBarScroll={bannerBarScroll} showContact={showContact} />
+      {isNavVisible && <Navigation bannerBarScroll={bannerBarScroll} showContact={showContact} route={route} />}
+      <Banner bannerBar={bannerBar} bannerBarScroll={bannerBarScroll} showContact={showContact} route={route} />
       {isContactVisible && <ContactForm hideContact={hideContact} />}
       {routeSwitch()}   
       <Footer />

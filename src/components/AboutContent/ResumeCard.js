@@ -4,7 +4,7 @@ import gradcap from '../../img/graduationcap.png';
 import coding from '../../img/coding.png';
 import './ResumeCard.css'
 
-// render single resume card for home tab
+// render single resume card for about tab
 const ResumeCard = ({ id, title, data, resumeScroll }) => {
     
     // returns card's image based on data.id property
