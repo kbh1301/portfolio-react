@@ -1,4 +1,53 @@
 .rcTitle {
     font-size: 3rem;
     margin-left: 2rem;
+    margin-bottom: .75rem;
+}
+
+.rcList {
+    list-style: disc;
+}
+
+.cusBar {
+    margin-bottom: 2.5rem;
+}
+
+.resumeList {
+    list-style-type: none;
+    font-family: sans-serif;
+}
+
+.resumeListItem {
+    padding: 0 0 20px 50px;
+    position: relative;
+    margin: 0;
+}
+
+.resumeListItem:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    border: 2px solid lightblue;
+    border-radius: 50%;
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    text-align: center;
+    line-height: 12px;
+    background: white;
+}
+
+.resumeListItem:before {
+    position: absolute;
+    left: 7px;
+    top: 0;
+    content: "";
+    height: 100%;
+    width: 0;
+    border-left: 2px solid lightgray;
+}
+
+.resumeListItem:last-of-type:before {
+    border: none;
 }
