@@ -15,14 +15,16 @@
 }
 
 #fs-frm {
-    margin: 2rem;
+    margin: 0 auto 3rem auto;
     overflow-y: auto;
+    width: 100%;
+    max-width: 55rem;
 }
 
 .cusBD{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     width: 100%;
     margin: 2rem;
     background-color: white;
@@ -34,10 +36,14 @@
     align-items: center;
     max-width: 45rem;
     margin: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .cusMB {
     max-width: 90vw;
+    height: 15rem;
+    resize: vertical;
 }
 
 .closeBtn {
