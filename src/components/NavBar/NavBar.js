@@ -1,9 +1,9 @@
 import React from 'react';
 import NavButtons from '../NavButtons/NavButtons';
 import avi from '../../img/KBH_avi.jpg';
-import './Navigation.css'
+import './NavBar.css'
 
-const Navigation = ({ bannerBarScroll, showContact, route }) => {
+const NavBar = ({ bannerBarScroll, showContact, route }) => {
 
     return(
         <nav class="flex bb b--black bg-light-blue cus-bar fixed w-100 z-9999 slideDown">
@@ -14,10 +14,10 @@ const Navigation = ({ bannerBarScroll, showContact, route }) => {
             <span className="dot absolute bg-light-blue"/>
             </div>
             <div class="flex-grow pa3 flex items-center ml-auto">
-                <NavButtons bannerBarScroll={bannerBarScroll} showContact={showContact} route={route} source='Navigation' />
+                <NavButtons bannerBarScroll={bannerBarScroll} showContact={showContact} route={route} source='NavBar' />
             </div>
         </nav>
     );
 }
 
-export default Navigation;
+export default NavBar;

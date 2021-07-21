@@ -1,12 +1,10 @@
 To-Do:
-- Rename Navigation to NavBar
-- Add email functionality to contact form
 - NavBar slide-up
 - Add demos, hobbies content
 - Redesign css
 - Refactor code, reduce dependencies
-  - Reduce repeated code in ResumeCard/HomeContent & ResumeContent
-    - Possible new component with CSS variables based on currently loaded components (to distinguish between Home/Resume tabs)?
+  - Reduce repeated code in ResumeCard/AboutContent & ResumeContent
+    - Check NavButtons used in Banner and NavBar for reference
   - Replace hardcoded route names and titles in NavButtons
   - Move tachyon css (only what's used) to local
 
