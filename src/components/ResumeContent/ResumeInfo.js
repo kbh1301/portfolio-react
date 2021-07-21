@@ -215,6 +215,18 @@ export const resume = [
                     {
                         id: 7,
                         desc: 'JGrasp',
+                    },
+                    {
+                        id: 8,
+                        desc: 'React',
+                    },
+                    {
+                        id: 9,
+                        desc: 'npm',
+                    },
+                    {
+                        id: 10,
+                        desc: 'Sharepoint',
                     }
                 ]
             },
