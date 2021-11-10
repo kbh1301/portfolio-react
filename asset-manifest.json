@@ -1,29 +1,29 @@
 {
   "files": {
     "main.css": "/profile/static/css/main.0aef60c7.chunk.css",
-    "main.js": "/profile/static/js/main.5aeaa02a.chunk.js",
-    "main.js.map": "/profile/static/js/main.5aeaa02a.chunk.js.map",
-    "runtime-main.js": "/profile/static/js/runtime-main.6838c877.js",
-    "runtime-main.js.map": "/profile/static/js/runtime-main.6838c877.js.map",
+    "main.js": "/profile/static/js/main.0a1b80fe.chunk.js",
+    "main.js.map": "/profile/static/js/main.0a1b80fe.chunk.js.map",
+    "runtime-main.js": "/profile/static/js/runtime-main.c83f9e19.js",
+    "runtime-main.js.map": "/profile/static/js/runtime-main.c83f9e19.js.map",
     "static/css/2.c1f4f5f4.chunk.css": "/profile/static/css/2.c1f4f5f4.chunk.css",
-    "static/js/2.fbe7b07a.chunk.js": "/profile/static/js/2.fbe7b07a.chunk.js",
-    "static/js/2.fbe7b07a.chunk.js.map": "/profile/static/js/2.fbe7b07a.chunk.js.map",
-    "static/js/3.c212a17a.chunk.js": "/profile/static/js/3.c212a17a.chunk.js",
-    "static/js/3.c212a17a.chunk.js.map": "/profile/static/js/3.c212a17a.chunk.js.map",
+    "static/js/2.79cc793d.chunk.js": "/profile/static/js/2.79cc793d.chunk.js",
+    "static/js/2.79cc793d.chunk.js.map": "/profile/static/js/2.79cc793d.chunk.js.map",
+    "static/js/3.386dfc3e.chunk.js": "/profile/static/js/3.386dfc3e.chunk.js",
+    "static/js/3.386dfc3e.chunk.js.map": "/profile/static/js/3.386dfc3e.chunk.js.map",
     "index.html": "/profile/index.html",
     "static/css/2.c1f4f5f4.chunk.css.map": "/profile/static/css/2.c1f4f5f4.chunk.css.map",
     "static/css/main.0aef60c7.chunk.css.map": "/profile/static/css/main.0aef60c7.chunk.css.map",
-    "static/js/2.fbe7b07a.chunk.js.LICENSE.txt": "/profile/static/js/2.fbe7b07a.chunk.js.LICENSE.txt",
+    "static/js/2.79cc793d.chunk.js.LICENSE.txt": "/profile/static/js/2.79cc793d.chunk.js.LICENSE.txt",
     "static/media/KBH_avi.228e1522.jpg": "/profile/static/media/KBH_avi.228e1522.jpg",
     "static/media/banner.447db387.jpg": "/profile/static/media/banner.447db387.jpg",
     "static/media/graduationcap.0eb3a623.png": "/profile/static/media/graduationcap.0eb3a623.png",
     "static/media/khulveyResume2021.ef7e2367.pdf": "/profile/static/media/khulveyResume2021.ef7e2367.pdf"
   },
   "entrypoints": [
-    "static/js/runtime-main.6838c877.js",
+    "static/js/runtime-main.c83f9e19.js",
     "static/css/2.c1f4f5f4.chunk.css",
-    "static/js/2.fbe7b07a.chunk.js",
+    "static/js/2.79cc793d.chunk.js",
     "static/css/main.0aef60c7.chunk.css",
-    "static/js/main.5aeaa02a.chunk.js"
+    "static/js/main.0a1b80fe.chunk.js"
   ]
 }
