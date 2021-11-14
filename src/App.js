@@ -40,7 +40,7 @@ function App() {
     }
   }
 
-  // changes content to resume tab and scrolls to which resume part has been clicked from about page
+  // changes content to resume tab and scrolls to whichever resume section has been clicked from about page
   const resumeScroll = async (id) => {
     setRoute('resume');
     await timeout(100);
@@ -69,7 +69,7 @@ function App() {
     setIsContactVisible(true);
   }
   const hideContact = () => {
-    setIsContactVisible(false)
+    setIsContactVisible(false);
   }
 
   return (

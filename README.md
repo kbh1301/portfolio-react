@@ -1,4 +1,5 @@
 To-Do:
+- Mobile features
 - NavBar slide-up
 - Add demos, hobbies content
 - Redesign css
