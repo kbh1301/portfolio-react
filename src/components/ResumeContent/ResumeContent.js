@@ -11,7 +11,7 @@ const ResumeContent = () => {
     
     const resumeCards = () =>
         resume.map((section, i) => {
-            const skillsSection = section?.title === 'Related Skills' ? "flex" : "";
+            const skillsSection = section?.title === 'Related Skills' ? "flex flex-wrap" : "";
             return ( 
                 <article id={section.id} class="pa2 flex flex-column bg-white br4 mv3 mh2 ba bw1 b--black shadow-5 items-center tl">
                     <div className="">
