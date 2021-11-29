@@ -32,13 +32,11 @@ const App = () => {
   return (
     <div className="App">
       <div className="header">
-        <div ref={bannerRef}>
-          <Banner />
-        </div>
+        <div ref={bannerRef}> <Banner /> </div>
         <NavBar bannerInView={bannerInView} contentRef={contentRef} setIsContactVisible={setIsContactVisible} {...contentTabProps} />
       </div>
 
-      <div ref={contentRef}>{contentTabs[contentTab]}</div>
+      <div ref={contentRef}> {contentTabs[contentTab]} </div>
 
       <Footer />
 
