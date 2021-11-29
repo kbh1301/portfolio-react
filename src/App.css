@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+.header {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  height: 100vh;
+}

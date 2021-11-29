@@ -14,3 +14,11 @@ body {
     width: 12rem;
     height: 12rem;
 }
+
+#bannerMain {
+    height: 100%;
+}
+
+#bannerMinor {
+    height: 100%;
+}

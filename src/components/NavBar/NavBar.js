@@ -1,21 +1,48 @@
-import React from 'react';
-import NavButtons from '../NavButtons/NavButtons';
-import avi from '../../img/KBH_avi.jpg';
+import React, { useState } from 'react';
 import './NavBar.css'
+import MenuIcon from './menu_Icon.svg';
+import ContactBar from '../ContactForm/ContactBar';
+import { timeout } from '../../utils/utils';
 
-const NavBar = ({ bannerBarScroll, showContact, route }) => {
+const NavBar = ({ bannerInView, contentRef, setIsContactVisible, contentTab, setContentTab, contentTabs }) => {
+   
+    // scrolls to content and changes content via route
+    const contentScroll = async (elmt) => {
+        if(elmt.target.title){
+        contentRef.current.scrollIntoView({behavior: 'smooth'});
+        await timeout(100);
+        setContentTab(elmt.target.title);
+        }
+    }
+
+    const navBtns = 
+        <div style={{width: "100%"}}>
+            <span onClick={contentScroll}> {
+                // generate p element for every item in contentTabs
+                Object.keys(contentTabs).map(tabName => {
+                    // set tab button text color based on current tab
+                    const activeTab = tabName === contentTab ? "black" : "white";
+                    return <p title={tabName} className="nav-btn" style={{color: activeTab}}>{tabName}</p>
+                })}
+            </span>
+            <p title="Contact Me" class="contact-btn" onClick={() => setIsContactVisible(true)}>Contact Me</p>
+        </div>;     
+
+    const [ showMenu, setShowMenu ] = useState(false);
+    const hamburgerMenu =
+        <div onClick={() => setShowMenu(!showMenu)}>
+            <img className="menu-icon" src={MenuIcon}  />
+            <nav className="hamburger-menu" style={{left: !showMenu && -250}}>
+                {navBtns}
+                <ContactBar />
+            </nav>
+            {showMenu && <span className="menu-mask" />}
+        </div>
 
     return(
-        <nav class="flex bb b--black bg-light-blue cus-bar fixed w-100 z-9999 slideDown">
-            <div class="pointer link white-70 no-underline flex items-center pa2 absolute" onClick={() => window.scroll({top: 0, left: 0, behavior: 'smooth' })}>
-            <div className='cusWrapper dib w3 h3 br-100 ba bw1 b--black grow'>
-                <img src={avi} className="cusWrapperImg block" alt="Avatar"/>
-            </div>
-            <span className="dot absolute bg-light-blue"/>
-            </div>
-            <div class="flex-grow pa3 flex items-center ml-auto">
-                <NavButtons bannerBarScroll={bannerBarScroll} showContact={showContact} route={route} source='NavBar' />
-            </div>
+        <nav className="bar-menu flex justify-center flex-wrap bg-light-blue bb bt b--white cusMar">
+            {navBtns}
+            {!bannerInView && hamburgerMenu}
         </nav>
     );
 }

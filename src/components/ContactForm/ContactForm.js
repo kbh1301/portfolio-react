@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './ContactForm.css'
 import ContactBar from './ContactBar';
 
-const ContactForm = ({ hideContact }) => {
+const ContactForm = ({ setIsContactVisible }) => {
     const [status, setStatus] = useState("Submit");
 
     const handleSubmit = async (e) => {
@@ -36,10 +36,10 @@ const ContactForm = ({ hideContact }) => {
             { // Close modal via hideContact method when Esc is pressed
                 document.addEventListener('keydown', (event) => {
                     if(event.key === "Escape")
-                        hideContact();
+                        setIsContactVisible(false);
             })}
             <div className="cusBD br4">
-                <p className="top-0 right-0 pointer f4 hover-bg-silver no-underline grow dib v-mid bg-light-blue ph3 pv2 black closeBtn br-100 white fixed" onClick={() => hideContact()}>&#10006;</p>
+                <p className="top-0 right-0 pointer f4 hover-bg-silver no-underline grow dib v-mid bg-light-blue ph3 pv2 black closeBtn br-100 white fixed" onClick={() => setIsContactVisible(false)}>&#10006;</p>
                 <div>
                     <p className="ma1 f2 b">Contact Me!</p>
                     <hr class="w-100 mw4 bb bw1 b--black-10"/>

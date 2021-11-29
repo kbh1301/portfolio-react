@@ -37,3 +37,110 @@ body {
 .cus-bar--hidden {
     top: calc(0px - var(--dot-size));
 }
+
+.nav-btn,
+.contact-btn {
+    backface-visibility:hidden;
+    cursor: pointer;
+    position: relative;
+    transition: all .5s cubic-bezier( .165, .84, .44, 1 );
+    transform: translateZ( 0 );
+    vertical-align: middle;
+    font-size: 1.25rem;
+    text-decoration: none;
+    margin: 1rem .5rem 1rem .5rem;
+    padding: .5rem 2rem .5rem 2rem;
+    background-color: #96ccff;
+    display: inline-block;
+    border-radius: 9999px;
+    color: white;
+}
+.nav-btn:hover,
+.nav-btn:focus,
+.contact-btn:hover,
+.contact-btn:focus{
+    transform:scale(1.05)
+}
+.nav-btn:active,
+.contact-btn:active {
+    transform:scale(.9)
+}
+.nav-btn::after,
+.contact-btn::after {
+    content:'';
+    box-shadow:0px 0px 16px 2px rgba( 0, 0, 0, .2 );
+    border-radius:inherit;
+    opacity:0;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:-1;
+    transition:opacity 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.nav-btn:hover::after,
+.nav-btn:focus::after,
+.contact-btn:hover::after,
+.contact-btn:focus::after {
+    opacity:1;
+}
+
+.contact-btn {
+    background-color: #357EDD;
+    font-style: italic;
+}
+
+.hamburger-menu .nav-btn,
+.hamburger-menu .contact-btn {
+    display: block;
+    font-size: 1.25rem;
+    margin: 10px;
+    border-radius: .25rem;
+}
+
+.menu-icon,
+.hamburger-menu,
+.menu-mask {
+    position: fixed;
+}
+
+.hamburger-menu {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    transition: left 250ms ease-in;
+    width: 250px;
+    z-index: 2;
+    background-color: rgba(255,255,255, 1);
+    height: 100%;
+}
+
+.menu-icon {
+    top: 5px;
+    left: 5px;
+    border: solid black 2px;
+    border-radius: .5rem;
+    padding: 2px;
+    z-index: 1;
+    height: 2.5em;
+    cursor: pointer;
+    background-color: #96CCFF;
+}
+.menu-icon:hover {
+    background-color: rgb(230, 230, 230);
+}
+.menu-icon:active {
+    transform:scale(.9)
+}
+
+.menu-mask {
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0, .5);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
