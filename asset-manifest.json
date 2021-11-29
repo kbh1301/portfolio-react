@@ -1,29 +1,30 @@
 {
   "files": {
-    "main.css": "/profile/static/css/main.0aef60c7.chunk.css",
-    "main.js": "/profile/static/js/main.42db97ac.chunk.js",
-    "main.js.map": "/profile/static/js/main.42db97ac.chunk.js.map",
-    "runtime-main.js": "/profile/static/js/runtime-main.7c0829a1.js",
-    "runtime-main.js.map": "/profile/static/js/runtime-main.7c0829a1.js.map",
+    "main.css": "/profile/static/css/main.a79596f9.chunk.css",
+    "main.js": "/profile/static/js/main.376995ee.chunk.js",
+    "main.js.map": "/profile/static/js/main.376995ee.chunk.js.map",
+    "runtime-main.js": "/profile/static/js/runtime-main.6838c877.js",
+    "runtime-main.js.map": "/profile/static/js/runtime-main.6838c877.js.map",
     "static/css/2.c1f4f5f4.chunk.css": "/profile/static/css/2.c1f4f5f4.chunk.css",
-    "static/js/2.7c6d9d81.chunk.js": "/profile/static/js/2.7c6d9d81.chunk.js",
-    "static/js/2.7c6d9d81.chunk.js.map": "/profile/static/js/2.7c6d9d81.chunk.js.map",
-    "static/js/3.d0276462.chunk.js": "/profile/static/js/3.d0276462.chunk.js",
-    "static/js/3.d0276462.chunk.js.map": "/profile/static/js/3.d0276462.chunk.js.map",
+    "static/js/2.ad18ee93.chunk.js": "/profile/static/js/2.ad18ee93.chunk.js",
+    "static/js/2.ad18ee93.chunk.js.map": "/profile/static/js/2.ad18ee93.chunk.js.map",
+    "static/js/3.c212a17a.chunk.js": "/profile/static/js/3.c212a17a.chunk.js",
+    "static/js/3.c212a17a.chunk.js.map": "/profile/static/js/3.c212a17a.chunk.js.map",
     "index.html": "/profile/index.html",
     "static/css/2.c1f4f5f4.chunk.css.map": "/profile/static/css/2.c1f4f5f4.chunk.css.map",
-    "static/css/main.0aef60c7.chunk.css.map": "/profile/static/css/main.0aef60c7.chunk.css.map",
-    "static/js/2.7c6d9d81.chunk.js.LICENSE.txt": "/profile/static/js/2.7c6d9d81.chunk.js.LICENSE.txt",
+    "static/css/main.a79596f9.chunk.css.map": "/profile/static/css/main.a79596f9.chunk.css.map",
+    "static/js/2.ad18ee93.chunk.js.LICENSE.txt": "/profile/static/js/2.ad18ee93.chunk.js.LICENSE.txt",
     "static/media/KBH_avi.228e1522.jpg": "/profile/static/media/KBH_avi.228e1522.jpg",
     "static/media/banner.447db387.jpg": "/profile/static/media/banner.447db387.jpg",
     "static/media/graduationcap.0eb3a623.png": "/profile/static/media/graduationcap.0eb3a623.png",
-    "static/media/khulveyResume2021.ef7e2367.pdf": "/profile/static/media/khulveyResume2021.ef7e2367.pdf"
+    "static/media/khulveyResume2021.ef7e2367.pdf": "/profile/static/media/khulveyResume2021.ef7e2367.pdf",
+    "static/media/menu_Icon.c7a283b9.svg": "/profile/static/media/menu_Icon.c7a283b9.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.7c0829a1.js",
+    "static/js/runtime-main.6838c877.js",
     "static/css/2.c1f4f5f4.chunk.css",
-    "static/js/2.7c6d9d81.chunk.js",
-    "static/css/main.0aef60c7.chunk.css",
-    "static/js/main.42db97ac.chunk.js"
+    "static/js/2.ad18ee93.chunk.js",
+    "static/css/main.a79596f9.chunk.css",
+    "static/js/main.376995ee.chunk.js"
   ]
 }
