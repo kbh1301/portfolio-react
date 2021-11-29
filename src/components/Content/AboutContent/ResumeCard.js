@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
-import briefcase from '../../img/briefcase.png';
-import gradcap from '../../img/graduationcap.png';
-import coding from '../../img/coding.png';
+import briefcase from './../../../img/briefcase.png';
+import gradcap from './../../../img/graduationcap.png';
+import coding from './../../../img/coding.png';
 import './ResumeCard.css'
 
 // render single resume card for about tab

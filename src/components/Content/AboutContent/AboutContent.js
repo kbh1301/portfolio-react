@@ -1,8 +1,18 @@
 import React from 'react';
 import ResumeCard from './ResumeCard';
-import { resume } from '../ResumeContent/ResumeInfo'
+import { resume } from '../../ResumeInfo'
+import { timeout } from '../../../utils/utils';
 
-const AboutContent = ({ resumeScroll }) => {
+const AboutContent = ({ setContentTab }) => {
+
+    // changes content to resume tab and scrolls to whichever resume section has been clicked from about page
+    const resumeScroll = async (id) => {
+        setContentTab('Resume');
+        await timeout(100);
+        const elmtToScrollTo = document.getElementById(id);
+        const y = elmtToScrollTo.getBoundingClientRect().top + window.pageYOffset;
+        window.scrollTo({top: y, behavior: 'smooth'});
+    }
 
     // creates resume card for each object in ResumeInfo.js
     // passes values to ResumeCard.js

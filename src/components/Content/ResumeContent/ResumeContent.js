@@ -1,9 +1,9 @@
 import React, { Fragment } from 'react';
-import resumePdf from '../../img/khulveyResume2021.pdf';
-import briefcase from '../../img/briefcase.png';
-import gradcap from '../../img/graduationcap.png';
-import coding from '../../img/coding.png';
-import { resume } from '../ResumeContent/ResumeInfo'
+import resumePdf from './../../../img/khulveyResume2021.pdf';
+import briefcase from './../../../img/briefcase.png';
+import gradcap from './../../../img/graduationcap.png';
+import coding from './../../../img/coding.png';
+import { resume } from '../../ResumeInfo'
 import './ResumeContent.css'
 
 
