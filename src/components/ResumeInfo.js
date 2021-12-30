@@ -120,9 +120,9 @@ export const resume = [
             },
             {
                 id: 1,
-                position: 'Interested in pursuing Bachelor of Computer Science',
-                place: '',
-                date: 'Future Goal',
+                position: 'High School Diploma',
+                place: 'Franklin Christian Academy',
+                date: 'May 2013',
                 overview: '',
                 descs: []
             },
@@ -130,18 +130,10 @@ export const resume = [
                 id: 2,
                 position: 'Udemy Certification',
                 place: 'The Complete Web Developer in 2021: Zero to Mastery',
-                date: 'In Progress',
+                date: 'Ongoing',
                 overview: '',
                 descs: []
             },
-            {
-                id: 3,
-                position: 'High School Diploma',
-                place: 'Franklin Christian Academy',
-                date: 'May 2013',
-                overview: '',
-                descs: []
-            }
         ]
     },
     {
@@ -157,7 +149,7 @@ export const resume = [
                 descs: [
                     {
                         id: 0,
-                        desc: 'Java',
+                        desc: 'Java, Gosu',
                     },
                     {
                         id: 1,
@@ -171,62 +163,42 @@ export const resume = [
                         id: 3,
                         desc: 'C#, C++',
                     },
-                    {
-                        id: 4,
-                        desc: 'Gosu',
-                    }
                 ]
             },
             {
                 id: 1,
-                position: 'Tools',
+                position: 'Tools/Frameworks',
                 place: '',
                 date: '',
                 overview: '',
                 descs: [
                     {
                         id: 0,
-                        desc: 'Visual Studio',
+                        desc: 'Visual Studio, VS Code',
                     },
                     {
                         id: 1,
-                        desc: 'VS Code',
+                        desc: 'GitHub, Bitbucket, Rally, Sharepoint',
                     },
                     {
                         id: 2,
-                        desc: 'GitHub',
-                    },
-                    {
-                        id: 3,
-                        desc: 'Bitbucket',
-                    },
-                    {
-                        id: 4,
-                        desc: 'Rally',
-                    },
-                    {
-                        id: 5,
                         desc: 'Guidewire Studio',
                     },
                     {
-                        id: 6,
-                        desc: 'Sublime Text Editor',
-                    },
-                    {
-                        id: 7,
-                        desc: 'JGrasp',
-                    },
-                    {
-                        id: 8,
+                        id: 3,
                         desc: 'React',
                     },
                     {
-                        id: 9,
+                        id: 4,
                         desc: 'npm',
                     },
                     {
-                        id: 10,
-                        desc: 'Sharepoint',
+                        id: 5,
+                        desc: 'API',
+                    },
+                    {
+                        id: 6,
+                        desc: 'JSON, XML',
                     }
                 ]
             },
@@ -248,7 +220,7 @@ export const resume = [
                     {
                         id: 2,
                         desc: 'Version Control',
-                    }
+                    },
                 ]
             }
         ]

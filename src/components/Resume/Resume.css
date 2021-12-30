@@ -1,0 +1,181 @@
+@media print {
+    .r-printer {
+        display: none;
+    }
+}
+.r-printer {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-size: 50px;
+    cursor: pointer;
+    color: white;
+    background-color: #357edd;
+    width: 70px;
+    height: 70px;
+    border: none;
+    border-radius: 100%;
+    transition: ease-out 0.3s;
+    box-shadow:0px 0px 4px 4px rgba( 0, 0, 0, 0.2 )
+}
+.r-printer:hover {
+    transform: scale(1.1);
+    background-color: #96ccff;
+}
+
+.r-page {
+    -webkit-print-color-adjust: exact;
+    margin: auto;
+    height: 11in;
+    width: 8.5in;
+    padding: .25in;
+    background-color: #f2f2f2;
+}
+
+#r-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#r-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#r-name {
+    font: 900 30pt sans-serif;
+    font-family: 'Roboto condensed', sans-serif;
+}
+#r-title {
+    font: bold 16pt sans-serif;
+    font-family: 'Roboto condensed', sans-serif;
+}
+#r-contact-info {
+    list-style: none;
+    text-align: right;
+}
+#r-summary {
+    color: gray;
+}
+
+.r-h-line {
+    border: 2px solid #96ccff;
+    border-radius: 5rem;
+    margin: 10px 0 15px 0;
+}
+
+/* content setup */
+#r-education,
+#r-skills,
+#r-employment {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#r-education { 
+    grid-area: education; 
+}
+#r-skills { 
+    grid-area: skills; 
+    margin-top: 20px;
+}
+#r-employment { 
+    grid-area: employment;
+    margin-left: 20px;
+}
+.r-content {
+    display: grid;
+    grid-template-areas:
+        'education employment employment'
+        'skills employment employment';
+}
+
+.r-sec-title {
+    font: bold 18pt sans-serif;
+    padding: 10px 10px 5px 10px;
+    background-color: #96ccff;
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
+.r-sec-position {
+    font-weight: bold;
+}
+.r-sec-placedate {
+    display: flex;
+    justify-content: space-between;
+    font: italic 10pt sans-serif;
+    padding: 0 0 5px 0;
+    color: #357edd;
+}
+.r-sec-date {
+    text-align: right;
+}
+
+/* employment list timeline styles */
+#r-employment .r-sec-list {
+    list-style-type: none;
+}
+#r-employment .r-subsection {
+    padding: 0 0 20px 30px;
+    position: relative;
+}
+#r-employment .r-subsection:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    border: 2px solid lightblue;
+    border-radius: 50%;
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    text-align: center;
+    line-height: 12px;
+    background: white;
+}
+#r-employment .r-subsection:before {
+    position: absolute;
+    left: 7px;
+    top: 0;
+    content: "";
+    height: 100%;
+    width: 0;
+    border-left: 2px solid lightgray;
+}
+#r-employment .r-subsection:last-of-type:before {
+    border: none;
+}
+/* other employment specific styles */
+#r-employment .r-sec-overview {
+    padding: 0 0 5px 0;
+}
+#r-employment .r-sec-position {
+    font-size: 18px;
+}
+#r-employment .r-sec-placedate {
+    font-size: 15px;
+}
+
+.r-subsection {
+    padding-bottom: 10px;
+}
+
+#r-contact-info,
+.r-sec-list,
+.r-sec-desc-list {
+    margin: 0;
+}
+
+.r-sec-list {
+    list-style: none;
+    padding: 10px 10px 0px 10px;
+}
+.r-sec-desc-list {
+    padding: 0 0 0 20px;
+}
+
+.r-sec-desc-list-item {
+    font: 11pt sans-serif;
+}
