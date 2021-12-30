@@ -60,7 +60,7 @@ const ResumeContent = () => {
 
     return(
         <div className="flex flex-column items-center fadeInContent">
-            <a href="/ResumeFile" target="_blank" rel="noopener noreferrer" className="f3 no-underline grow hover-bg-silver dib v-mid bg-blue black ph4 pv3 mb3 mt4 ml2 mr2 br-pill white pointer" >View & download my latest resume</a>
+            <a href="./ResumeFile" target="_blank" rel="noopener noreferrer" className="f3 no-underline grow hover-bg-silver dib v-mid bg-blue black ph4 pv3 mb3 mt4 ml2 mr2 br-pill white pointer" >View & download my latest resume</a>
             {resumeCards()}
         </div>
     );
