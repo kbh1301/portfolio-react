@@ -1,30 +1,29 @@
 {
   "files": {
-    "main.css": "./static/css/main.764c79f0.chunk.css",
-    "main.js": "./static/js/main.7b9c72a0.chunk.js",
-    "main.js.map": "./static/js/main.7b9c72a0.chunk.js.map",
-    "runtime-main.js": "./static/js/runtime-main.2fa211b8.js",
-    "runtime-main.js.map": "./static/js/runtime-main.2fa211b8.js.map",
+    "main.css": "./static/css/main.87a85f1d.chunk.css",
+    "main.js": "./static/js/main.5f1fe6d4.chunk.js",
+    "main.js.map": "./static/js/main.5f1fe6d4.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.fe4efed8.js",
+    "runtime-main.js.map": "./static/js/runtime-main.fe4efed8.js.map",
     "static/css/2.c1f4f5f4.chunk.css": "./static/css/2.c1f4f5f4.chunk.css",
-    "static/js/2.5a87ac76.chunk.js": "./static/js/2.5a87ac76.chunk.js",
-    "static/js/2.5a87ac76.chunk.js.map": "./static/js/2.5a87ac76.chunk.js.map",
-    "static/js/3.ffd7c5d6.chunk.js": "./static/js/3.ffd7c5d6.chunk.js",
-    "static/js/3.ffd7c5d6.chunk.js.map": "./static/js/3.ffd7c5d6.chunk.js.map",
+    "static/js/2.ed1c99dd.chunk.js": "./static/js/2.ed1c99dd.chunk.js",
+    "static/js/2.ed1c99dd.chunk.js.map": "./static/js/2.ed1c99dd.chunk.js.map",
+    "static/js/3.c212a17a.chunk.js": "./static/js/3.c212a17a.chunk.js",
+    "static/js/3.c212a17a.chunk.js.map": "./static/js/3.c212a17a.chunk.js.map",
     "index.html": "./index.html",
     "static/css/2.c1f4f5f4.chunk.css.map": "./static/css/2.c1f4f5f4.chunk.css.map",
-    "static/css/main.764c79f0.chunk.css.map": "./static/css/main.764c79f0.chunk.css.map",
-    "static/js/2.5a87ac76.chunk.js.LICENSE.txt": "./static/js/2.5a87ac76.chunk.js.LICENSE.txt",
+    "static/css/main.87a85f1d.chunk.css.map": "./static/css/main.87a85f1d.chunk.css.map",
+    "static/js/2.ed1c99dd.chunk.js.LICENSE.txt": "./static/js/2.ed1c99dd.chunk.js.LICENSE.txt",
     "static/media/KBH_avi.228e1522.jpg": "./static/media/KBH_avi.228e1522.jpg",
     "static/media/banner.447db387.jpg": "./static/media/banner.447db387.jpg",
     "static/media/graduationcap.0eb3a623.png": "./static/media/graduationcap.0eb3a623.png",
-    "static/media/khulveyResume2021.ef7e2367.pdf": "./static/media/khulveyResume2021.ef7e2367.pdf",
     "static/media/menu_Icon.c7a283b9.svg": "./static/media/menu_Icon.c7a283b9.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.2fa211b8.js",
+    "static/js/runtime-main.fe4efed8.js",
     "static/css/2.c1f4f5f4.chunk.css",
-    "static/js/2.5a87ac76.chunk.js",
-    "static/css/main.764c79f0.chunk.css",
-    "static/js/main.7b9c72a0.chunk.js"
+    "static/js/2.ed1c99dd.chunk.js",
+    "static/css/main.87a85f1d.chunk.css",
+    "static/js/main.5f1fe6d4.chunk.js"
   ]
 }
