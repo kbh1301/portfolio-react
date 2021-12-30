@@ -12,9 +12,10 @@ import './App.css';
 
 const App = () => {
   // returns a route name if one is found in the current url
-  const path = contentRoutesNames.find(name => window.location.pathname.includes(name))
+  let path = contentRoutesNames.find(name => window.location.pathname.includes(name))
   // set currentPath state as url path or default to first element in contentRoutes
   const [currentPath, setCurrentPath] = useState(path || contentRoutesNames[0]);
+  if(!currentPath) setCurrentPath(contentRoutesNames[0]);
 
   useReRender(setCurrentPath);
 
