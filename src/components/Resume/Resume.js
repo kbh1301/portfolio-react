@@ -1,6 +1,7 @@
 import { Fragment } from 'react';
 import { resume } from '../ResumeInfo';
 import './Resume.css'
+import PrinterIcon from './printer_icon.svg';
 
 const content = (id) => {
     return(
@@ -64,7 +65,7 @@ const Resume = () => {
                     </div>
                 </div>
             </div>
-            <button className="r-printer" onClick={() => window.print()}>&#128438;</button>
+            <img className="r-printer" src={PrinterIcon} onClick={() => window.print()} alt="printer icon" />
         </div>
     );
 }

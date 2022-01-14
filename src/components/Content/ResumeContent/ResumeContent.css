@@ -1,7 +1,7 @@
 .rcTitle {
+    text-align: center;
     font-size: 3rem;
-    margin-left: 2rem;
-    margin-bottom: .75rem;
+    margin: .75rem 0;
 }
 
 .rcList {

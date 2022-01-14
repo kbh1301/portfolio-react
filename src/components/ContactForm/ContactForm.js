@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './ContactForm.css'
-import ContactBar from './ContactBar';
+import ContactBar from '../ContactBar/ContactBar';
 
 const ContactForm = ({ setIsContactVisible }) => {
     const [status, setStatus] = useState("Submit");

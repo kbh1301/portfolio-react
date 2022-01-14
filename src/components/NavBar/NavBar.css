@@ -1,41 +1,17 @@
-html {
-    --dot-size: 80px;
-}
-
 body {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-.cusWrapper {
-    margin: -6px auto;
-    overflow: hidden;
-    border-radius:50%;
-    position: relative;
-    z-index: 1;
-}
-
-.cusWrapperImg {
-    position: absolute;
-    top:70%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    z-index: 1;
-}
-
-.dot {
-    height: var(--dot-size);
-    width: var(--dot-size);
-    border-radius: 50%;
-    z-index: 0;
-    left: 0px;
-}
-
-.cus-bar {
-    height: 3em;
-}
-
-.cus-bar--hidden {
-    top: calc(0px - var(--dot-size));
+.bar-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #96ccff;
+    border-color: #fff;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-top-width: 1px;
 }
 
 .nav-btn,
@@ -122,7 +98,7 @@ body {
     top: 5px;
     left: 5px;
     border: solid black 2px;
-    border-radius: .5rem;
+    border-radius: 25%;
     padding: 2px;
     z-index: 1;
     height: 2.5em;

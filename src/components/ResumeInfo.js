@@ -5,7 +5,7 @@ export const resume = [
         data: [
             {
                 id: 0,
-                position: 'Guidewire Configuration Developer',
+                position: 'Software Developer',
                 place: 'Farm Bureau TN',
                 date: 'Feb 2020 - Present',
                 overview: 'Working with the configuration team to develop Guidewire Insurance Suite in accordance to Farm Bureau’s specific needs.',
@@ -74,7 +74,7 @@ export const resume = [
                 id: 3,
                 position: 'Store Associate',
                 place: 'K&S Awards',
-                date: 'February 2018 - July 2018',
+                date: 'Feb 2018 - July 2018',
                 overview: 'Performed a wide variety of duties necessary to run a small awards business with store owners. Duties included sales, friendly service with clients, maintaining Excel database, building awards, and more.',
                 descs: [
                     {
@@ -101,7 +101,7 @@ export const resume = [
                 id: 0,
                 position: 'AAS in Computer Information Technology, Programming Concentration',
                 place: 'Columbia State Community College',
-                date: 'May 2019 - August 2020',
+                date: 'May 2019 - Aug 2020',
                 overview: '',
                 descs: [
                     {

@@ -1,8 +1,9 @@
 import briefcase from './../../../img/briefcase.png';
 import gradcap from './../../../img/graduationcap.png';
 import coding from './../../../img/coding.png';
-import { resume } from '../../ResumeInfo'
-import './ResumeContent.css'
+import { resume } from '../../ResumeInfo';
+import './ResumeContent.css';
+import '../Content.css';
 
 
 const ResumeContent = () => {
@@ -11,10 +12,10 @@ const ResumeContent = () => {
         resume.map((section, i) => {
             const skillsSection = section?.title === 'Related Skills' ? "flex flex-wrap" : "";
             return ( 
-                <article key={i} id={section.id} className="pa2 flex flex-column bg-white br4 mv3 mh2 ba bw1 b--black shadow-5 items-center tl">
+                <article key={i} id={section.id} className="article">
                     <div className="">
-                        <div className="flex justify-center">
-                            <img src={cardImg(i)} className="bh3 w3 h3 dib self-center" alt=""/>
+                        <div className="flex flex-wrap justify-center">
+                            <img src={cardImg(i)} className="mh3 bh3 w3 h3 dib self-center" alt=""/>
                             <h1 className="f2 rcTitle self-center">{section.title}</h1>
                         </div>
                         <hr className="mw4 cusBar bb bw1 b--black-10"/>
@@ -59,8 +60,8 @@ const ResumeContent = () => {
     )})
 
     return(
-        <div className="flex flex-column items-center fadeInContent">
-            <a href="./ResumeFile" target="_blank" rel="noopener noreferrer" className="f3 no-underline grow hover-bg-silver dib v-mid bg-blue black ph4 pv3 mb3 mt4 ml2 mr2 br-pill white pointer" >View & download my latest resume</a>
+        <div className="content-col fadeInContent">
+            <a href="./ResumeFile" target="_blank" rel="noopener noreferrer" className="f3 no-underline grow hover-bg-silver dib v-mid bg-blue black ph4 pv3 mb3 br-pill white pointer" >View & download my latest resume</a>
             {resumeCards()}
         </div>
     );
