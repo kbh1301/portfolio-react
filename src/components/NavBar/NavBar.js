@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import './NavBar.css'
-import MenuIcon from './menu_Icon.svg';
-import ContactBar from '../ContactForm/ContactBar';
+import MenuIcon from './menu_icon.svg';
+import ContactBar from '../ContactBar/ContactBar';
+import { useMediaQuery } from '../../utils/utils.js';
 
 const NavBar = ({ bannerInView, navBtns }) => {
+    const isMobile = useMediaQuery('(max-width: 575.98px)');
 
     // conditionally rendered nav menu (if banner is in viewport)
     const [ showMenu, setShowMenu ] = useState(false);
@@ -18,9 +20,9 @@ const NavBar = ({ bannerInView, navBtns }) => {
         </div>
 
     return(
-        <nav className="bar-menu flex justify-center flex-wrap bg-light-blue bb bt b--white cusMar">
-            {navBtns}
-            {!bannerInView && hamburgerMenu}
+        <nav className="bar-menu" style={{ height: isMobile && '.5rem'}}>
+            <div style={{ display: isMobile && 'none'}}>{navBtns}</div>
+            {(!bannerInView || isMobile) && hamburgerMenu}
         </nav>
     );
 }

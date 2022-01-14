@@ -2,6 +2,7 @@ import React from 'react';
 import ResumeCard from './ResumeCard';
 import { resume } from '../../ResumeInfo'
 import { timeout, routeChange } from '../../../utils/utils';
+import '../Content.css';
 
 const AboutContent = () => {
 
@@ -28,8 +29,8 @@ const AboutContent = () => {
         )})
 
     return(
-        <div className="flex flex-column items-center fadeInContent">
-            <article className="mw8 br3 hidden ba b--black-10 mv4 mh2 shadow-3">
+        <div className="content-col fadeInContent">
+            <article className="mw8 br3 hidden ba b--black-10 mb4 shadow-3">
                 <h1 className="f4 bg-near-white br3 br--top black-60 mv0 pv2 ph3">About Me</h1>
                 <div className="pa3 bt b--black-10">
                     <p className="f4 f5-m lh-copy">

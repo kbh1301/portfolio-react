@@ -1,5 +1,5 @@
 import React from 'react';
-import ContactBar from '../ContactForm/ContactBar';
+import ContactBar from '../ContactBar/ContactBar';
 
 const Footer = () => {
     return(

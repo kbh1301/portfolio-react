@@ -40,8 +40,7 @@ const ResumeCard = ({ id, title, data, resumeScroll }) => {
     )})
 
     return(
-        <Fragment>
-        <article className="resumeCard flex flex-column mw5 bg-white br4 mv3 mh2 ba bw1 b--black shadow-5 items-center" style={{maxWidth: '22rem'}}>
+        <article className="resumeCard flex flex-column bg-white br4 mv3 mh2 items-center">
             <div className="relative overflow-hidden">
                 <div className="tc">
                     <img src={cardImg()} className="bh3 w4 dib" alt=""/>
@@ -53,7 +52,6 @@ const ResumeCard = ({ id, title, data, resumeScroll }) => {
             </div>
             <p className="f4 no-underline grow shadow-hover dib v-mid bg-gray white ph3 pv2 br-pill" onClick={() => resumeScroll(id)}>See More</p>
         </article>
-        </Fragment>
     );
 }
 

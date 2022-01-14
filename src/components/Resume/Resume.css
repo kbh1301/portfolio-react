@@ -2,25 +2,27 @@
     .r-printer {
         display: none;
     }
+    @page {
+        margin: 0;
+    }
 }
 .r-printer {
     position: fixed;
     top: 10px;
     right: 10px;
-    font-size: 50px;
+    height: 2.5em;
+    padding: 10px;
     cursor: pointer;
     color: white;
-    background-color: #357edd;
-    width: 70px;
-    height: 70px;
-    border: none;
-    border-radius: 100%;
+    background-color: #96CCFF;
+    border: 2px black solid;
+    border-radius: 25%;
     transition: ease-out 0.3s;
-    box-shadow:0px 0px 4px 4px rgba( 0, 0, 0, 0.2 )
+    box-shadow:0px 0px 4px 4px rgba( 0, 0, 0, 0.2 );
 }
 .r-printer:hover {
     transform: scale(1.1);
-    background-color: #96ccff;
+    background-color: rgb(230, 230, 230);
 }
 
 .r-page {
