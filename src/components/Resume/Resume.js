@@ -41,7 +41,7 @@ const Resume = () => {
                         <span id="r-title">Software Developer</span>
                     </div>
                     <ul id="r-contact-info">
-                        <li>kbh1301.github.io/profile</li>
+                        <li>kbh1301.github.io</li>
                         <li>kyle.hulvey@gmail.com</li>
                         <li>(615) 796-0056</li>
                     </ul>
