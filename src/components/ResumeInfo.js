@@ -8,19 +8,23 @@ export const resume = [
                 position: 'Software Developer',
                 place: 'Farm Bureau TN',
                 date: 'Feb 2020 - Present',
-                overview: 'Working with the configuration team to develop Guidewire Insurance Suite in accordance to Farm Bureau’s specific needs.',
+                overview: 'Member of software development team creating and supporting the Guidewire Insurance Suite to enable Farm Bureau’s insurance processing needs.',
                 descs: [
                     {
                         id: 0,
-                        desc: 'Developing and pushing Java-based Gosu code changes via Git',
+                        desc: 'Software development using Java-based Gosu',
                     },
                     {
                         id: 1,
-                        desc: 'Unit testing and logging changes in accordance to company standards',
+                        desc: 'Deploying code changes using Git',
                     },
                     {
-                        id: 2,
-                        desc: 'Coordinating sprint work using Rally and SharePoint',
+                        id: 3,
+                        desc: 'Unit testing based on business analyst specifications and  logging changes in accordance to company standards',
+                    },
+                    {
+                        id: 4,
+                        desc: 'Participating in agile SDLC sprints using Rally and SharePoint',
                     }
                 ]
             },
@@ -29,19 +33,19 @@ export const resume = [
                 position: 'IT Department Intern',
                 place: 'EnableComp',
                 date: 'Jan 2019 - May 2019',
-                overview: 'Worked with team members of various information technology specializations such as networking, cybersecurity, computer programming, and help desk.',
+                overview: 'Assisted the technology team in providing technology automation and support for processing of healthcare claims for hospitals and large physician groups.',
                 descs: [
                     {
                         id: 0,
-                        desc: 'Assisted in setting up hardware',
+                        desc: 'Exposure to cyber security, software development, and help desk teams',
                     },
                     {
                         id: 1,
-                        desc: 'Provided technical support via ticketing system',
+                        desc: 'Setup hardware and provided technical support via ticketing system',
                     },
                     {
                         id: 2,
-                        desc: 'Shadowed and assisted in software development',
+                        desc: 'Shadowed and assisted in software development of a C# .NET, SQL Server, and Angular-based healthcare claims processing system and associated applications.  Exposed to healthcare data standards including X12, UB04, HCFA, and CPT, DRG, and ICD codes.',
                     },
                     {
                         id: 3,
@@ -70,27 +74,6 @@ export const resume = [
                     }
                 ]
             },
-            {
-                id: 3,
-                position: 'Store Associate',
-                place: 'K&S Awards',
-                date: 'Feb 2018 - July 2018',
-                overview: 'Performed a wide variety of duties necessary to run a small awards business with store owners. Duties included sales, friendly service with clients, maintaining Excel database, building awards, and more.',
-                descs: [
-                    {
-                        id: 0,
-                        desc: 'Managed store independently when necessary',
-                    },
-                    {
-                        id: 1,
-                        desc: 'Designed and built various awards to specifications',
-                    },
-                    {
-                        id: 2,
-                        desc: 'Worked with various hardware and software programs',
-                    }
-                ]
-            }
         ]
     },
     {
@@ -120,17 +103,17 @@ export const resume = [
             },
             {
                 id: 1,
-                position: 'High School Diploma',
-                place: 'Franklin Christian Academy',
-                date: 'May 2013',
+                position: 'Udemy Certification',
+                place: 'The Complete Web Developer in 2021: Zero to Mastery',
+                date: 'Ongoing',
                 overview: '',
                 descs: []
             },
             {
                 id: 2,
-                position: 'Udemy Certification',
-                place: 'The Complete Web Developer in 2021: Zero to Mastery',
-                date: 'Ongoing',
+                position: 'Certified SQL Developer',
+                place: 'W3Schools',
+                date: '',
                 overview: '',
                 descs: []
             },
@@ -161,7 +144,7 @@ export const resume = [
                     },
                     {
                         id: 3,
-                        desc: 'C#, C++',
+                        desc: 'C#, .NET, C++',
                     },
                 ]
             },
@@ -199,7 +182,15 @@ export const resume = [
                     {
                         id: 6,
                         desc: 'JSON, XML',
-                    }
+                    },
+                    {
+                        id: 7,
+                        desc: 'SQL Server Management Studio'
+                    },
+                    {
+                        id: 8,
+                        desc: 'SQL Server Reporting Services'
+                    },
                 ]
             },
             {

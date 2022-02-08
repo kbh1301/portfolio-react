@@ -1,4 +1,3 @@
-import { BarbellPlatesCalculator } from 'barbell-plates-calc';
 import '../Content.css';
 
 const DemosContent = () => {
@@ -22,8 +21,8 @@ const DemosContent = () => {
                         <b>Repository: </b><a className="no-underline" href="https://github.com/kbh1301/barbell-plates-calculator" target="_blank" rel="noopener noreferrer">github.com/kbh1301/barbell-plates-calculator</a>
                         <br/><br/>
                     </span>
-
-                    <BarbellPlatesCalculator />
+                    
+                    <iframe src="https://kbh1301.github.io/barbell-calc/" width="100%" height="500px"></iframe>
                 </div>
             </article>
         </div>

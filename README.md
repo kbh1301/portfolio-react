@@ -1,5 +1,5 @@
 Profile website built using React:
-https://kbh1301.github.io/profile/
+https://kbh1301.github.io
 
 To-Do:
 - Mobile features
