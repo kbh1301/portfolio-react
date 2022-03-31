@@ -5,9 +5,30 @@ export const resume = [
         data: [
             {
                 id: 0,
-                position: 'Software Developer',
+                position: 'Core Application Developer',
                 place: 'Farm Bureau TN',
-                date: 'Feb 2020 - Present',
+                date: 'Feb 2022 - Present',
+                overview: 'Member of core application development team maintaining and improving Farm Bureau’s in-house applications.',
+                descs: [
+                    {
+                        id: 0,
+                        desc: 'Software development for applications utilizing a Java EE, Maven, Spring Framework based tech stack',
+                    },
+                    {
+                        id: 1,
+                        desc: 'Resolving tickets through various means including MySQL database and API call management',
+                    },
+                    {
+                        id: 3,
+                        desc: 'Preventing future tickets by improving quality of code and user validation',
+                    }
+                ]
+            },
+            {
+                id: 1,
+                position: 'Guidewire Developer',
+                place: 'Farm Bureau TN',
+                date: 'Feb 2020 - Jan 2022',
                 overview: 'Member of software development team creating and supporting the Guidewire Insurance Suite to enable Farm Bureau’s insurance processing needs.',
                 descs: [
                     {
@@ -16,20 +37,20 @@ export const resume = [
                     },
                     {
                         id: 1,
-                        desc: 'Deploying code changes using Git',
+                        desc: 'Deployed code changes using Git',
                     },
                     {
                         id: 3,
-                        desc: 'Unit testing based on business analyst specifications and  logging changes in accordance to company standards',
+                        desc: 'Unit tested based on business analyst specifications and logged changes in accordance to company standards',
                     },
                     {
                         id: 4,
-                        desc: 'Participating in agile SDLC sprints using Rally and SharePoint',
+                        desc: 'Participated in agile SDLC sprints using Rally and SharePoint',
                     }
                 ]
             },
             {
-                id: 1,
+                id: 2,
                 position: 'IT Department Intern',
                 place: 'EnableComp',
                 date: 'Jan 2019 - May 2019',
@@ -41,20 +62,16 @@ export const resume = [
                     },
                     {
                         id: 1,
-                        desc: 'Setup hardware and provided technical support via ticketing system',
+                        desc: 'Provided hardware setup and technical support via ticketing system',
                     },
                     {
                         id: 2,
-                        desc: 'Shadowed and assisted in software development of a C# .NET, SQL Server, and Angular-based healthcare claims processing system and associated applications.  Exposed to healthcare data standards including X12, UB04, HCFA, and CPT, DRG, and ICD codes.',
-                    },
-                    {
-                        id: 3,
-                        desc: 'Received training in debugging, troubleshooting, and testing'
+                        desc: 'Shadowed in software development of a C# .NET, SQL Server, Angular-based healthcare claims processing system and associated applications',
                     }
                 ]
             },
             {
-                id: 2,
+                id: 3,
                 position: 'Rural Carrier Associate',
                 place: 'United States Postal Service',
                 date: 'July 2018 - Dec 2018',
@@ -105,14 +122,14 @@ export const resume = [
                 id: 1,
                 position: 'Udemy Certification',
                 place: 'The Complete Web Developer in 2021: Zero to Mastery',
-                date: 'Ongoing',
+                date: '',
                 overview: '',
                 descs: []
             },
             {
                 id: 2,
-                position: 'Certified SQL Developer',
-                place: 'W3Schools',
+                position: 'W3Schools Certification',
+                place: 'SQL Developer',
                 date: '',
                 overview: '',
                 descs: []
@@ -132,7 +149,7 @@ export const resume = [
                 descs: [
                     {
                         id: 0,
-                        desc: 'Java, Gosu',
+                        desc: 'JavaScript, HTML, CSS',
                     },
                     {
                         id: 1,
@@ -140,7 +157,7 @@ export const resume = [
                     },
                     {
                         id: 2,
-                        desc: 'HTML, CSS, JavaScript',
+                        desc: 'Java, Gosu',
                     },
                     {
                         id: 3,
@@ -157,19 +174,15 @@ export const resume = [
                 descs: [
                     {
                         id: 0,
-                        desc: 'Visual Studio, VS Code',
+                        desc: 'Visual Studio, VS Code, Eclipse',
                     },
                     {
                         id: 1,
                         desc: 'GitHub, Bitbucket, Rally, Sharepoint',
                     },
                     {
-                        id: 2,
-                        desc: 'Guidewire Studio',
-                    },
-                    {
                         id: 3,
-                        desc: 'React',
+                        desc: 'React, Express, node.js',
                     },
                     {
                         id: 4,
@@ -177,20 +190,12 @@ export const resume = [
                     },
                     {
                         id: 5,
-                        desc: 'API',
+                        desc: 'SOAP/REST API',
                     },
                     {
                         id: 6,
-                        desc: 'JSON, XML',
-                    },
-                    {
-                        id: 7,
-                        desc: 'SQL Server Management Studio'
-                    },
-                    {
-                        id: 8,
-                        desc: 'SQL Server Reporting Services'
-                    },
+                        desc: 'JSON, XML, CSV',
+                    }
                 ]
             },
             {
@@ -206,7 +211,7 @@ export const resume = [
                     },
                     {
                         id: 1,
-                        desc: 'Debugging',
+                        desc: 'Debugging/Troubleshooting',
                     },
                     {
                         id: 2,

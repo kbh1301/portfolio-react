@@ -47,9 +47,7 @@ const Resume = () => {
                     </ul>
                 </div>
                 <div id="r-summary">
-                    Software developer with proven skills in attention to detail, efficiency, and a high aptitude for learning.
-                    Seeking a software development position by leveraging years of dedicated teamwork, fresh experience in the field, and
-                    ongoing education in information technology.
+                Highly motivated software engineer with a hunger for learning and self-improvement. After a varied work background, I discovered a passion for computer programming and have been excited to grow within the technology industry ever since!
                 </div>
                 <hr className="r-h-line"/>
 

@@ -7,16 +7,32 @@
 }
 
 .cusCusImg {
+    transform: translateZ(0);
+    transition: transform .25s ease-out;
     width: 12rem;
     height: 12rem;
+    border: .25rem solid #96ccff;
+    border-radius: 100%;
+}
+.cusCusImg:hover,
+.cusCusImg:focus {
+    transform: scale(1.05);
 }
 
 #bannerMain {
     height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 
 #bannerMinor {
     height: 100%;
+    background-color: rgba(0,0,0,.7);
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 .cusWrapper {
@@ -33,4 +49,29 @@
     left:50%;
     transform: translate(-50%,-50%);
     z-index: 1;
+}
+
+.bannerTitle,
+.bannerSubTitle {
+    font-family: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
+}
+
+.bannerTitle {
+    margin-bottom: 0;
+    line-height: 1.25;
+    color: rgba(255,255,255,.9);
+    font-weight: 200;
+    font-size: 2.25rem;
+}
+
+.bannerSubTitle {
+    font-size: 1.5rem;
+    color: rgba(255,255,255,.8);
+    font-weight: 100;
+}
+
+@media screen and (min-width: 60em) {
+    .bannerTitle {
+        font-size: 3rem;
+    }
 }
