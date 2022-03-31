@@ -89,9 +89,10 @@
 }
 .r-content {
     display: grid;
+    grid-template-columns: 1fr auto;
     grid-template-areas:
-        'education employment employment'
-        'skills employment employment';
+        'education employment'
+        'skills employment';
 }
 
 .r-sec-title {
