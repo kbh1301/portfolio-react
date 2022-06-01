@@ -13,7 +13,7 @@ const Banner = () => {
                         <div className='cusWrapper cusCusImg'>
                             <img src="https://avatars.githubusercontent.com/u/83362164" onError={(e)=>e.target.src=avi} className="cusWrapperImg cusImg" alt="Avatar"/>
                         </div>
-                        <h1 className="bannerTitle">My name is Test</h1>
+                        <h1 className="bannerTitle">My name is Kyle Hulvey</h1>
                         <h2 className="bannerSubTitle">And I'm a Software Developer</h2>
                     </div>
                 </div>
