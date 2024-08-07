@@ -1,5 +1,4 @@
-Profile website built using React:
-https://kbh1301.github.io
+Profile website built using React.
 
 To-Do:
 - Mobile features
